@@ -12,6 +12,9 @@
     --term-start: ">";
     --term-cursor: "█";
 }
+*{
+    background:
+}
 
 body {
     font-family: var(--vt323);
@@ -19,14 +22,32 @@ body {
     color: var(--green);
 }
 /* page style */
+main {
 
+}
 /* header style */
 
 /* nav style */
 
 /* main style */
 
-/* style */
+/* text styles */
+
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+p{
+
+}
 
 /* style */
 
