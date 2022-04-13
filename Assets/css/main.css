@@ -15,15 +15,22 @@
 *{
     background:
 }
+.type {
+    word-break: break-all;
+}
 
 body {
     font-family: var(--vt323);
     background-color: #131;
     color: var(--green);
+    margin: 0;
+
 }
 /* page style */
 main {
-
+    border-top: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+    
 }
 /* header style */
 
