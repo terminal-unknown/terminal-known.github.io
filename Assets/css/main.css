@@ -7,6 +7,7 @@
     --Inconsolata: 'Inconsolata', monospace;
     --green: #5bf870;
     --green2: rgba(128,255,128,0.8);
+    --dark-green: #131;
     --rad-green: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
     --screen-line: repeating-linear-gradient( 0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
     --term-start: ">";
@@ -24,6 +25,17 @@ body {
     background-color: #131;
     color: var(--green);
     margin: 0;
+    background-image: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+}
+.term-main{
+
+}
+.term-main::before{
+
+}
+.term-main::after{
 
 }
 /* page style */
@@ -33,7 +45,11 @@ main {
     
 }
 /* header style */
-
+header{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
 /* nav style */
 
 /* main style */
@@ -41,7 +57,7 @@ main {
 /* text styles */
 
 h1{
-
+    text-align: center;
 }
 h2{
 
@@ -53,9 +69,23 @@ h4{
 
 }
 p{
+    font-size: 16px;
+    
+}
+blockquote{
 
 }
+a{
+    text-decoration: underline;
 
+}
+a:hover{
+    background-color: var(--green);
+    color: var(--dark-green);
+}
+a:hover::before{
+    content: ">";
+}
 /* style */
 
 /* style */
