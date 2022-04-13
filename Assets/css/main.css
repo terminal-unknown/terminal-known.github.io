@@ -30,6 +30,16 @@ body {
     display: block;
     text-transform:uppercase;
 }
+/* header style */
+header {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 3em;
+    padding: 5% 5%;
+    text-align: center;
+    justify-content: center;
+}
+/* page styles */
 #term-main {
     text-transform: uppercase;
     background-image: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
@@ -68,15 +78,7 @@ main {
     border-bottom: 2px solid var(--green);
     
 }
-/* header style */
-header{
-    width: 100%;
-    margin-bottom: 15px;
-    font-size: 10em;
-    padding: 5% 5%;
-    text-align: center;
-    justify-content: center;
-}
+
 hr {
     color: var(--green2);
     text-align: center;
