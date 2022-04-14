@@ -1,9 +1,16 @@
 {
-    "name": "em9836web",
-    "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": "eVmPr",
-    
-    "contributors": [],
-    "dependencies": {"":""}
+  "name": "terminal-network",
+  "version": "1.0.0",
+  "description": "main package",
+
+  "keywords": [ "util", "personal", "unknown", "code", "terminal-net", "terminal-network" ],
+
+  "author": {
+    "name": "eVmPr",
+    "email": " emiller5881@outlook.com",
+    "url": "https://github.com/en9836"
+  },
+
+  "contributors": [ "Elena Miller" ],
+  "dependencies": { "": "" }
 }
