@@ -16,7 +16,12 @@
 }
 
 * {
-    background:
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
 }
 
 .type {
@@ -28,7 +33,6 @@ body {
     background-color: #131;
     color: var(--green);
     margin: 0;
-    background-image: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
     background-position: center;
     display: block;
     text-transform: uppercase;
@@ -83,6 +87,8 @@ header {
 main {
     border-top: 2px solid var(--green);
     border-bottom: 2px solid var(--green);
+    height: 100%;
+    padding: 2% 5%;
 }
 
 .term-main hr {
@@ -142,10 +148,13 @@ main {
 .term-main blockquote {
     background-color: black;
     border: double 2px solid var(--green);
+    display: block;
+    padding: 5px;
 }
 
 .term-main a {
     text-decoration: underline;
+    color: var(--green);
 }
 
     .term-main a:hover {
@@ -154,8 +163,24 @@ main {
     }
 
         .term-main a:hover::before {
-            content: ">";
+            content: "> ";
         }
+
+.term-main button {
+    background-color: rgb(0,0,0);
+    color: var(--green);
+    border: 2px solid var(--green);
+    cursor: pointer;
+}
+
+    .term-main button:hover {
+        background-color: var(--green);
+        color: var(--dark-green);
+    }
+
+    .term-main button:active {
+    }
+
 /* style */
 
 /* animations style */
