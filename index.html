@@ -28,7 +28,7 @@
         <div id="scanline"></div>
         <div id="screen1">
             <header>
-                <i class="fa-terminal"></i> TERMINAL NETWORK
+                <i class="fas fa-terminal"></i> TERMINAL NETWORK
             </header>
 
             <article>
@@ -61,11 +61,13 @@
 
     </div>
     <script>
+        document.getElementById("power").onclick = function () { };
         $("#power").click(evt => {
             var c = document.getElementById("term-content");
             var span = document.createElement("span");
             span.className = "typer";
             span.id = "output";
+            span.innerHTML += "Logging ont to online terminal system......"
             evt.preventDefault();
         });
     </script>

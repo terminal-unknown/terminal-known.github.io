@@ -36,8 +36,9 @@ async function input(value) {
     }, wait);
 }
 /**
- * 
- * @param {type} value
+ * adds typed command to history object
+ * @param {String} value
+ * @typedef {void}
  * @returns {undefined}
  */
 function addHistory(value) {
@@ -45,7 +46,7 @@ function addHistory(value) {
 }
 /**
  * 
- * @param {any} char
+ * @param {String} char
  */
 function getChar(char) {
     let result;
@@ -78,10 +79,10 @@ function getChar(char) {
  * @param {Number} waitval
  * @returns {undefined}
  */
-function type(text, container = document.querySelector("#term-content"), waitval) {
+function type(text, options = {}, container = document.querySelector("#term-content"), waitval) {
     //  await;  type("Welcome to TERMINAL #???",{initialWait: 3000});
     if (!text) return Promise.resolve();
-
+    let { } = options;
     var span = document.getElementById("output");
     if (!span) {
         span = document.createElement("span");
