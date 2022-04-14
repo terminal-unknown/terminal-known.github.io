@@ -21,6 +21,7 @@
 }
 
 html {
+    background-color: #131;
 }
 
 .type {
@@ -29,19 +30,20 @@ html {
 
 body {
     font-family: var(--vt323);
-    background-color: #131;
+    /*    background-color: #131;*/
     color: var(--green);
-    margin: 0;
+    margin: 0 2%;
     background-position: center;
     display: block;
     text-transform: uppercase;
+    position: relative;
 }
 /* header style */
 header {
     width: 100%;
     margin-bottom: 15px;
     font-size: 3em;
-    padding: 5% 5%;
+    padding: 2% 5%;
     text-align: center;
     justify-content: center;
 }
