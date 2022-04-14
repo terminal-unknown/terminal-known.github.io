@@ -173,6 +173,7 @@ main {
     color: var(--green);
     border: 2px solid var(--green);
     cursor: pointer;
+    padding: 2.5px 5px;
 }
 
     .term-main button:hover {
