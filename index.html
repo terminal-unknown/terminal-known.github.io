@@ -35,19 +35,33 @@
                 <h1>Home</h1>
 
                 <section>
-                    <h2>--Terminal # 111--</h2>
-                    <h3>Welcome</h3>
+                    <h2>--Terminal HUB--</h2>
 
-                    <button type="button" id="power">Connect</button>
 
-                    <button type="button" onclick="writeCookie()">Add Cookie</button>
 
-                    <p>Hello there user.</p>
-                    <blockquote id="term-content">
-                    </blockquote>
 
+                    <!--<button type="button" onclick="writeCookie()">Add Cookie</button>-->
+                    <p></p>
+                    <label for="selterm">Select a Terminal to Connect to:</label>
+                    <select name="selterm" id="selterm" onchange="document.getElementById('terminal-sel').innerHTML = this.value;">
+                        <option value="t1">Terminal #111</option>
+                        <option value="t2">Terminal #222</option>
+                        <option value="t3">Terminal #333</option>
+                        <option value="t4">Terminal #444</option>
+                        <option value="t5">Terminal #555</option>
+                        <option value="tq">Terminal #???</option>
+                    </select>
+
+                    <table>
+                        <tr>
+                            <td><span id="terminal-sel"></span></td>
+                            <td><button type="button" id="power">Connect</button></td>
+                        </tr>
+                    </table>
 
                 </section>
+                <div id="term-content"></div>
+                <!--<blockquote id="term-content"></blockquote>-->
             </article>
 
 
@@ -61,13 +75,15 @@
 
     </div>
     <script>
-        document.getElementById("power").onclick = function () { };
+        document.getElementById("power").onclick = function () {
+        };
         $("#power").click(evt => {
             var c = document.getElementById("term-content");
             var span = document.createElement("span");
             span.className = "typer";
             span.id = "output";
             span.innerHTML += "Logging ont to online terminal system......"
+            document.getElementById("power").innerHTML += span;
             evt.preventDefault();
         });
     </script>

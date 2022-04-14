@@ -32,11 +32,12 @@ body {
     font-family: var(--vt323);
     /*    background-color: #131;*/
     color: var(--green);
-    margin: 0 2%;
+    /*    margin: 0 2%;*/
     background-position: center;
     display: block;
     text-transform: uppercase;
     position: relative;
+    width: 100%;
 }
 /* header style */
 header {
@@ -104,10 +105,26 @@ main {
     height: 100%;
     background: linear-gradient( to bottom, rgba(18, 16, 16, 0.1) 50%, rgba(0, 0, 0, 0.25) 50% );
     background-size: 100% 8px;
-    <<<<<<< HEAD z-index: 2;
-    ======= z-index: 1;
-    >>>>>>> 6025cecfe8e6a94122cd57ddf466252c6cb4f92f pointer-events: none;
+    z-index: 2;
+    z-index: 1;
+    pointer-events: none;
     animation: fadeIn 2s;
+}
+
+section {
+    float: left;
+}
+
+#term-content {
+    background-color: black;
+    border: 2px solid double rgba(128,255,128,0.8);
+    display: block;
+    padding: 1%;
+    height: 70vh;
+    width: 70vh;
+    overflow-y: auto;
+    text-align: left;
+    float: right;
 }
 
 #scanline {
@@ -125,24 +142,34 @@ main {
 /* main style */
 
 /* text styles */
+#prompt {
+    display: none;
+}
+
+[contenteditable] {
+    caret-color: transparent;
+    outline: none;
+}
+
+.type .active::after {
+    content: var(--term-cursor);
+}
+
 .typer {
 }
 
 .term-main h1 {
     text-align: center;
-    font-size: large;
+    font-size: 2.5em;
 }
 
 .term-main h2 {
-    font-size: medium;
+    font-size: 1.5em;
     text-align: center;
 }
 
 .term-main h3 {
-    font-size: small;
-}
-
-.term-main h4 {
+    font-size: 1em;
 }
 
 .term-main p {
@@ -152,14 +179,6 @@ main {
 
 .term-main strong {
     text-decoration: double;
-}
-
-.term-main blockquote {
-    background-color: black;
-    border: double 2px solid rgba(128,255,128,0.8);
-    border-color: display: block;
-    padding: 1%;
-    height: 100vh;
 }
 
 .term-main a {
@@ -200,7 +219,7 @@ main {
     margin-left: 1px;
     line-height: 1rem;
 }
-
+/* input styles*/
 #input:before {
     content: var(--term-start);
 }
@@ -218,6 +237,16 @@ main {
     width: 10px;
     z-index: 4;
     caret-color: transparent;
+}
+
+select {
+    font-family: VT323, monospace;
+    font-size: 1rem;
+    background-color: rgb(0,0,0);
+    color: var(--green);
+    border: 2px solid var(--green);
+    cursor: pointer;
+    padding: 2.5px 5px;
 }
 /* style */
 

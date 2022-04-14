@@ -6,7 +6,10 @@
 
 //import {$sel} from "";
 import { togglePower } from "./ui.js";
-const togglePower = togglePower();
+const togglePower = togglePower
+const toggleSelTerminal = function () {
+    var te = document.getElementById("terminal-sel");
+}
 function onLoad() {
     //    const urlp = 
 }
