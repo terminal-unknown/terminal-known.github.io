@@ -23,7 +23,7 @@ async function input(value) {
             }
             if (evt.keyCode === 13) {
                 evt.preventDefault();
-                evt.target.setAttribute("contenteditable", false);
+                evt.target.setAttributeadmin("contenteditable", false);
                 let result = evt.target.textContent.toLowerCase.trim();
             }
 
@@ -83,10 +83,10 @@ function type(text, container = document.querySelector("#term-content"), waitval
     if (!text) return Promise.resolve();
 
     var span = document.getElementById("output");
-    if (span == null) {
+    if (!span) {
         span = document.createElement("span");
         span.id = "output";
-        span.setAttribute("id", "output");
+        span.setAttribute("class", "output");
         span.setAttribute("contenteditable", "true");
         span.innerHTML = "";
         document.querySelector("#term-content")[0].appendChild(span);
@@ -101,6 +101,7 @@ function type(text, container = document.querySelector("#term-content"), waitval
             (keycode > 185 && keycode < 193) || // ;=,-./` (in order)
             (keycode > 218 && keycode < 223)) {
             printable = true;
+            document.querySelector(".output[con]")
         }
 
     }
