@@ -125,6 +125,8 @@ main {
 /* main style */
 
 /* text styles */
+.typer {
+}
 
 .term-main h1 {
     text-align: center;
@@ -192,6 +194,31 @@ main {
     .term-main button:active {
     }
 
+.active:after {
+    animation: cursor 1s infinite;
+    animation-timing-function: step-end;
+    margin-left: 1px;
+    line-height: 1rem;
+}
+
+#input:before {
+    content: var(--term-start);
+}
+
+#input:after {
+    content: var(--term-cursor);
+    animation: blink 800ms steps(13) infinite normal;
+}
+
+#input input[type="text"] {
+    border: none;
+    /*background-color: rgba(255,255,255,0);*/
+    background-color: rgba(255,255,255,0);
+    cursor: text;
+    width: 10px;
+    z-index: 4;
+    caret-color: transparent;
+}
 /* style */
 
 /* animations style */

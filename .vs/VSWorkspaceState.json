@@ -3,11 +3,12 @@
     "",
     "\\Assets",
     "\\Assets\\css",
+    "\\Assets\\image",
     "\\Assets\\js",
     "\\Assets\\scss",
     "\\Assets\\utils",
     "\\src"
   ],
-  "SelectedNode": "\\Assets\\css\\all.css",
+  "SelectedNode": "\\Assets\\image\\favicon.ico",
   "PreviewInSolutionExplorer": false
 }

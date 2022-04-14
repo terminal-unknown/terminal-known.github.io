@@ -19,9 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/3.4.1.min.js"></script>
     <script src="Assets/js/cookies.js"></script>
-    <script>
 
-    </script>
 </head>
 <body>
 
@@ -62,6 +60,14 @@
 
 
     </div>
-
+    <script>
+        $("#power").click(evt => {
+            var c = document.getElementById("term-content");
+            var span = document.createElement("span");
+            span.className = "typer";
+            span.id = "output";
+            evt.preventDefault();
+        });
+    </script>
 </body>
 </html>
