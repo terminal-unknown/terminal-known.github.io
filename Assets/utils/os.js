@@ -14,11 +14,11 @@ async function input(value) {
             keycode = event.keyCode;
             var printable = false;
             if ((keycode > 47 && keycode < 58) || // number keys
-                    keycode === 32 || // spacebar & return key(s) (if you want to allow carriage returns)
-                    (keycode > 64 && keycode < 91) || // letter keys
-                    (keycode > 95 && keycode < 112) || // numpad keys
-                    (keycode > 185 && keycode < 193) || // ;=,-./` (in order)
-                    (keycode > 218 && keycode < 223)) {
+                keycode === 32 || // spacebar & return key(s) (if you want to allow carriage returns)
+                (keycode > 64 && keycode < 91) || // letter keys
+                (keycode > 95 && keycode < 112) || // numpad keys
+                (keycode > 185 && keycode < 193) || // ;=,-./` (in order)
+                (keycode > 218 && keycode < 223)) {
                 printable = true;
             }
             if (evt.keyCode === 13) {
@@ -28,7 +28,8 @@ async function input(value) {
             }
 
         };
-//       let typer = 
+        //       let typer = 
+
         return new Promise(async (resolve) => {
 
         });
@@ -42,8 +43,32 @@ async function input(value) {
 function addHistory(value) {
 
 }
-function getChar(keycode){
-    
+/**
+ * 
+ * @param {any} char
+ */
+function getChar(char) {
+    let result;
+    if (typeof char === "string") {
+        if (char === "\n") {
+            result = document.createElement("br");
+        } else if (char === "\t") {
+            let tab = document.createElement("span");
+            tab.innerHTML = "&nbsp;&nbsp;&nbsp;";
+            result = tab;
+        } else if (char === " ") {
+            let space = document.createElement("span");
+            space.innerHTML = "&nbsp;";
+            space.classList.add("char");
+            result = space;
+        } else {
+            let span = document.createElement("span");
+            span.classList.add("char");
+            span.textContent = char;
+            result = span;
+        }
+    }
+    return result;
 }
 
 /**
@@ -54,7 +79,8 @@ function getChar(keycode){
  * @returns {undefined}
  */
 function type(text, container = document.querySelector("#term-content"), waitval) {
-//  await;  type("Welcome to TERMINAL #???",{initialWait: 3000});
+    //  await;  type("Welcome to TERMINAL #???",{initialWait: 3000});
+    if (!text) return Promise.resolve();
 
     var span = document.getElementById("output");
     if (span == null) {
@@ -64,17 +90,26 @@ function type(text, container = document.querySelector("#term-content"), waitval
         span.setAttribute("contenteditable", "true");
         span.innerHTML = "";
         document.querySelector("#term-content")[0].appendChild(span);
-//    span.contenteditable = ""
+        //    span.contenteditable = ""
     }
     for (const t of text) {
-//        t.prototype.toUpperCase();
+        //        t.prototype.toUpperCase();
+        if ((keycode > 47 && keycode < 58) || // number keys
+            keycode === 32 || // spacebar & return key(s) (if you want to allow carriage returns)
+            (keycode > 64 && keycode < 91) || // letter keys
+            (keycode > 95 && keycode < 112) || // numpad keys
+            (keycode > 185 && keycode < 193) || // ;=,-./` (in order)
+            (keycode > 218 && keycode < 223)) {
+            printable = true;
+        }
+
     }
 
-    container.querySelector("#output").innerHTML+=span;
+    container.querySelector("#output").innerHTML += span;
 }
 async function waitKey() {
     const handle = () => {
         document.addEventListener("keyup", handle);
     };
 }
-export {input, type, addHistory};
+export { input, type, addHistory };

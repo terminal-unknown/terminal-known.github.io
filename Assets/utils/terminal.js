@@ -5,16 +5,16 @@
  */
 
 //import {$sel} from "";
-import {togglePower} from "./ui.js";
-const togglePower =  togglePower();
-function onLoad(){
-//    const urlp = 
+import { togglePower } from "./ui.js";
+const togglePower = togglePower();
+function onLoad() {
+    //    const urlp = 
 }
-async function run(cmd, debug){
-    
+async function run(cmd, debug) {
+
 }
-function RegisterHandlers(){
-    
+function RegisterHandlers() {
+
 }
 //document.getElementById("power").addEventListener('click',togglePower);
 //document.addEventListener("")
