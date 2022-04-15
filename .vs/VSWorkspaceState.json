@@ -6,9 +6,11 @@
     "\\Assets\\image",
     "\\Assets\\js",
     "\\Assets\\scss",
+    "\\Assets\\typescript",
     "\\Assets\\utils",
     "\\src",
     "\\src\\packs"
   ],
+  "SelectedNode": "\\Assets\\typescript\\glitch.ts",
   "PreviewInSolutionExplorer": false
 }
