@@ -11,6 +11,7 @@
     --dark-green: #131;
     --rad-green: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
     --screen-line: repeating-linear-gradient( 0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
+    --screen-line2: repeating-linear-gradient(0deg, rgba(29, 30, 34, 0.5), rgba(29, 30, 34, 0.5) 1px, transparent 1px, transparent 2px);
     --term-start: ">";
     --term-cursor: "█";
 }
@@ -38,14 +39,15 @@ body {
     display: block;
     text-transform: uppercase;
     position: relative;
-    margin: auto auto;
+    margin: 0 auto;
+    padding: 0 1em;
 }
 /* header style */
 header {
     width: 100%;
     margin-bottom: 15px;
     font-size: 3em;
-    padding: 2% 5%;
+    padding: 1em 2em;
     text-align: center;
     justify-content: center;
 }
@@ -92,6 +94,7 @@ main {
     border-bottom: 2px solid var(--green);
     height: 100%;
     padding: 2% 1%;
+    margin: 1em 0;
 }
 
 .term-main hr {
@@ -102,7 +105,7 @@ main {
     background-color: rgba(255,255,255,0);
 }
 
-#screen1 {
+#screen1:after {
     height: 100%;
     background: linear-gradient( to bottom, rgba(18, 16, 16, 0.1) 50%, rgba(0, 0, 0, 0.25) 50% );
     background-size: 100% 8px;
@@ -111,17 +114,22 @@ main {
     animation: fadeIn 2s;
 }
 
+#screen2 {
+    background: var(--screen-line2);
+    background-size: 100% 8px;
+}
 
 #term-content {
     background-color: black;
     border: 2px solid double rgba(128,255,128,0.8);
     display: block;
     padding: 1%;
-    height: 70vh;
-    width: 70vh;
+    height: 50vh;
+    width: 50vh;
     overflow-y: auto;
     text-align: left;
     float: right;
+    z-index: 1;
 }
 
 #scanline {
