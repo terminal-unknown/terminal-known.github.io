@@ -7,8 +7,8 @@
     "\\Assets\\js",
     "\\Assets\\scss",
     "\\Assets\\utils",
-    "\\src"
+    "\\src",
+    "\\src\\packs"
   ],
-  "SelectedNode": "\\Assets\\image\\favicon.ico",
   "PreviewInSolutionExplorer": false
 }
