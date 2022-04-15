@@ -21,7 +21,7 @@
 }
 
 html {
-    background-color: #131;
+    background-color: #000000;
 }
 
 .type {
@@ -29,6 +29,7 @@ html {
 }
 
 body {
+    background-color: #131;
     font-family: var(--vt323);
     /*    background-color: #131;*/
     color: var(--green);
@@ -37,7 +38,7 @@ body {
     display: block;
     text-transform: uppercase;
     position: relative;
-    width: 100%;
+    margin: auto auto;
 }
 /* header style */
 header {
@@ -158,6 +159,10 @@ main {
 }
 
 .typer {
+}
+
+#term-sel {
+    min-width: 12.5em;
 }
 
 .term-main h1 {

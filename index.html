@@ -4,7 +4,7 @@
 <!-- xmlns="http://www.w3.org/1999/xhtml"-->
 <head>
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>Terminal - Home</title>
     <meta http-equiv="refresh" content="100">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <meta http-equiv="default-style" content="Assets/css/main.css">
@@ -27,41 +27,48 @@
 
     <main class="term-main">
         <div id="scanline"></div>
-        <div id="screen1">
-            <header>
-                <i class="fas fa-terminal"></i> TERMINAL NETWORK
-            </header>
 
-            <article>
-                <h1>Home</h1>
+        <header>
+            <i class="fas fa-terminal"></i> TERMINAL NETWORK
+        </header>
 
-                <section>
-                    <h2>--Terminal HUB--</h2>
-                    <!--<button type="button" onclick="writeCookie()">Add Cookie</button>-->
-                    <p></p>
-                    <label for="selterm">Select a Terminal to Connect to:</label>
-                    <select name="selterm" id="selterm" onchange="document.getElementById('terminal-sel').innerHTML = this.value;">
-                        <option value="t1">Terminal #111</option>
-                        <option value="t2">Terminal #222</option>
-                        <option value="t3">Terminal #333</option>
-                        <option value="t4">Terminal #444</option>
-                        <option value="t5">Terminal #555</option>
-                        <option value="tq">Terminal #???</option>
-                    </select>
-                    <
-                    <table id="connector">
-                        <tr>
-                            <td><span id="terminal-sel"></span></td>
-                            <td><button type="button" id="power">Connect</button></td>
-                        </tr>
-                    </table>
-                </section>
+        <article>
+            <h1>Home</h1>
+
+            <section>
+                <h2>--Terminal HUB--</h2>
+                <!--<button type="button" onclick="writeCookie()">Add Cookie</button>-->
+                <p></p>
+                <label for="selterm">Select a Terminal to Connect to:</label>
+                <select name="selterm" id="selterm" onchange="document.getElementById('terminal-sel').innerHTML = this.value;">
+                    <option value="t1">Terminal #111</option>
+                    <option value="t2">Terminal #222</option>
+                    <option value="t3">Terminal #333</option>
+                    <option value="t4">Terminal #444</option>
+                    <option value="t5">Terminal #555</option>
+                    <option value="tq">Terminal #???</option>
+                </select>
+
+                <table id="connector">
+                    <tr>
+                        <td><span id="terminal-sel"></span></td>
+                        <td><button type="button" id="power">Connect</button></td>
+                    </tr>
+                </table>
+            </section>
+            <details>
+                <summary></summary>
+                <p>There approximately to </p>
+            </details>
+            <div id="screen1">
                 <div id="term-content"></div>
-                <!--<blockquote id="term-content"></blockquote>-->
-            </article>
+            </div>
+
+            <!--<blockquote id="term-content"></blockquote>-->
+        </article>
 
 
-        </div>
+
 
     </main>
     <div>
