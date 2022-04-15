@@ -10,6 +10,7 @@ const togglePower = togglePower
 const toggleSelTerminal = function () {
     var te = document.getElementById("terminal-sel");
 }
+
 function onLoad() {
     //    const urlp = 
 }

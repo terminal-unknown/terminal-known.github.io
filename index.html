@@ -33,7 +33,7 @@
             <section>
                 <h2>--Terminal HUB--</h2>
                 <!--<button type="button" onclick="writeCookie()">Add Cookie</button>-->
-                <p></p>
+                <p>Welcome to the Terminal Hub. This is where you can connect to different terminals </p>
                 <label for="selterm">Select a Terminal to Connect to:</label>
                 <select name="selterm" id="selterm" onchange="document.getElementById('terminal-sel').innerHTML = this.value;">
                     <option value="t1">Terminal #111</option>
@@ -46,12 +46,14 @@
 
                 <table id="connector">
                     <tr>
+                        <td>Terminal: </td>
                         <td><span id="terminal-sel"></span></td>
                         <td><button type="button" id="power">Connect</button></td>
                     </tr>
                 </table>
                 <details>
-                    <summary>Terminals</summary>
+                    <summary><h2>Terminals - Information</h2></summary>
+                    Each Terminal Contains a set of commands that you can use.
 
                     <ul>
                         <li>
@@ -60,14 +62,25 @@
                                 <dd>
                                     - Location: online <br />
                                     - Connection:
-                                    - commands:
+                                    - Commands: Hello, Talk,
                                 </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt></dt>
+                                <dd></dd>
                             </dl>
                         </li>
                     </ul>
                 </details>
             </section>
-            <div id="term-content"></div>
+            <section id="terminal">
+                <h2>Terminal: </h2>
+                <hr />
+                <div id="term-content"></div>
+            </section>
+
         </div>
     </main>
     <div>
