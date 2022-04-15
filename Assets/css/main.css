@@ -125,7 +125,7 @@ main {
     display: block;
     padding: 1%;
     height: 50vh;
-    width: 50vh;
+    width: 50%;
     overflow-y: auto;
     text-align: left;
     float: right;
