@@ -128,7 +128,7 @@ main {
     width: 50vh;
     overflow-y: auto;
     text-align: left;
-    float: right;
+    float: left;
     z-index: 1;
 }
 
