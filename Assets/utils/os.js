@@ -25,6 +25,7 @@ async function input(value) {
                 evt.preventDefault();
                 evt.target.setAttributeadmin("contenteditable", false);
                 let result = evt.target.textContent.toLowerCase.trim();
+
             }
 
         };
@@ -102,7 +103,8 @@ function type(text, options = {}, container = document.querySelector("#term-cont
             (keycode > 185 && keycode < 193) || // ;=,-./` (in order)
             (keycode > 218 && keycode < 223)) {
             printable = true;
-            document.querySelector(".output[con]")
+            document.querySelector("#output")
+            // let element 
         }
 
     }

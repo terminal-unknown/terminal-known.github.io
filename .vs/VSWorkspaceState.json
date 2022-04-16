@@ -2,14 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Assets",
-    "\\Assets\\css",
     "\\Assets\\image",
     "\\Assets\\js",
     "\\Assets\\scss",
     "\\Assets\\typescript",
     "\\Assets\\utils",
+    "\\Assets\\utils\\cmds",
     "\\src",
     "\\src\\packs"
   ],
+  "SelectedNode": "\\Assets\\utils\\ts.json",
   "PreviewInSolutionExplorer": false
 }
