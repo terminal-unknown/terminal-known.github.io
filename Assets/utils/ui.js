@@ -3,35 +3,44 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import {input, type} from "./os.js";
+import { input, type } from "./os.js";
 /** Turn on */
-function on(){
-    
+function on() {
+
 }
 /** turn off */
-function off(){
-    
+function off() {
+
 }
-function handleClick(evt){
-    
+function handleClick(evt) {
+
 }
-function togglePower(){
-    let p = document.querySelector("#power")[0];
-    if (p.hasAttribute("style")){
-        if (p.style.color ==="black"){
-            p.style.color ==="green";
-        }else if(p.style.color ==="green"){
-            p.style.color ==="black";
-        }
+//function togglePower(){
+//    let p = document.querySelector("#power")[0];
+//    if (p.hasAttribute("style")){
+//        if (p.style.color ==="black"){
+//            p.style.color ==="green";
+//        }else if(p.style.color ==="green"){
+//            p.style.color ==="black";
+//        }
+//    }
+//    let screen = document.getElementById("term-body");
+
+//}
+function togglePower() {
+    var p = document.getElementById("terminal");
+    if (p.classList.contains("off")) {
+
+    } else if (p.classList.contains("on")) {
+
     }
-    let screen = document.getElementById("term-body");
-    
+
 }
-function globalListener({keyCode}){
-    
+function globalListener({ keyCode }) {
+
 }
-function addHandlers(){
-    document.addEventListener("keydown",globalListener);
+function addHandlers() {
+    document.addEventListener("keydown", globalListener);
     document.getElementById("power").addEventListener('click', togglePower);
 }
-export {togglePower, addHandlers, globalListener};
+export { togglePower, addHandlers, globalListener };

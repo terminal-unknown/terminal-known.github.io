@@ -33,18 +33,26 @@
             <section>
                 <h2>--Terminal HUB--</h2>
                 <!--<button type="button" onclick="writeCookie()">Add Cookie</button>-->
-                <p>Welcome to the Terminal Hub. This is where you can connect to different terminals </p>
-                <label for="selterm">Select a Terminal to Connect to:</label>
-                <select name="selterm" id="selterm" onchange="document.getElementById('terminal-sel').innerHTML = this.value;">
-                    <option value="t1">Terminal #111</option>
-                    <option value="t2">Terminal #222</option>
-                    <option value="t3">Terminal #333</option>
-                    <option value="t4">Terminal #444</option>
-                    <option value="t5">Terminal #555</option>
-                    <option value="tq">Terminal #???</option>
-                </select>
+                <p>
+                    Welcome to the Terminal Hub. This is where you can connect to different terminals,
+                    and run custom commands. It important to note that this terminal website is still a work in progress,
+                    so some things may not work
 
+                </p>
                 <table id="connector">
+                    <tr>
+                        <td><label for="selterm">Select a Terminal to Connect to:</label></td>
+                        <td>
+                            <select name="selterm" id="selterm" onchange="toggleTerminal()">
+                                <option value="t1">Terminal #111</option>
+                                <option value="t2">Terminal #222</option>
+                                <option value="t3">Terminal #333</option>
+                                <option value="t4">Terminal #444</option>
+                                <option value="t5">Terminal #555</option>
+                                <option value="tq">Terminal #???</option>
+                            </select>
+                        </td>
+                    </tr>
                     <tr>
                         <td>Terminal: </td>
                         <td><span id="terminal-sel"></span></td>
@@ -62,7 +70,37 @@
                                 <dd>
                                     - Location: online <br />
                                     - Connection:
-                                    - Commands: Hello, Talk,
+                                    - Commands:
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Terminal #111</dt>
+                                <dd>
+                                    - Location: online <br />
+                                    - Connection:
+                                    - Commands:
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Terminal #111</dt>
+                                <dd>
+                                    - Location: online <br />
+                                    - Connection:
+                                    - Commands:
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Terminal #111</dt>
+                                <dd>
+                                    - Location: online <br />
+                                    - Connection:
+                                    - Commands:
                                 </dd>
                             </dl>
                         </li>
@@ -74,9 +112,13 @@
                         </li>
                     </ul>
                 </details>
+                <details>
+                    <summary><h2>Other Links</datalist></h2></summary>
+                    <p></p>
+                </details>
             </section>
             <section id="terminal">
-                <h2>Terminal: </h2>
+                <h2>Terminal:<data value=""></data> </h2>
                 <hr />
                 <div id="term-content"></div>
             </section>
@@ -92,6 +134,11 @@
     <script>
         document.getElementById("power").onclick = function () {
         };
+        function toggleTerminal() {
+            document.getElementById('terminal-sel').innerHTML = document.getElementById('terminal-sel').value;
+            document.querySelector("#terminal h2 data")[0].value = document.getElementById('terminal-sel').value;
+            document.querySelector("#terminal h2 data")[0].innerHTML = document.getElementById('terminal-sel').innerHTML;
+        }
         $("#power").click(evt => {
             var c = document.getElementById("term-content");
             var span = document.createElement("span");
