@@ -5,8 +5,8 @@
  */
 
 //import {$sel} from "";
-import { togglePower } from "./ui.js";
-const togglePower = togglePower
+import togglePower from "./ui.js";
+
 const toggleSelTerminal = function () {
     var te = document.getElementById("terminal-sel");
 }
@@ -18,7 +18,7 @@ async function run(cmd, debug) {
 
 }
 function RegisterHandlers() {
-
+    document.getElementById();
 }
 //document.getElementById("power").addEventListener('click',togglePower);
 //document.addEventListener("")

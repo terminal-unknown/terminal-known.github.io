@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import { input, type } from "./os.js";
+import { input, type, } from "./os.js";
 /** Turn on */
 function on() {
 
@@ -30,9 +30,10 @@ function handleClick(evt) {
 function togglePower() {
     var p = document.getElementById("terminal");
     if (p.classList.contains("off")) {
+        p.classList.replace("off", "on");
 
     } else if (p.classList.contains("on")) {
-
+        p.classList.replace("off", "on");
     }
 
 }
@@ -42,5 +43,6 @@ function globalListener({ keyCode }) {
 function addHandlers() {
     document.addEventListener("keydown", globalListener);
     document.getElementById("power").addEventListener('click', togglePower);
+
 }
 export { togglePower, addHandlers, globalListener };
