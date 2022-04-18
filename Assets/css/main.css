@@ -193,6 +193,10 @@ section {
     text-align: center;
 }
 
+summary h2 {
+    text-align: left;
+}
+
 .term-main h3 {
     font-size: 1em;
 }
