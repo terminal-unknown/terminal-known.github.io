@@ -146,6 +146,7 @@ main {
 
 section {
     float: left;
+    width: 50%;
     padding: .25%;
 }
 
@@ -279,8 +280,6 @@ select, option {
     padding: 2.5px 5px;
 }
 
-.term-main summary h1 {
-}
 /* style */
 progress {
     color: var(--green);
@@ -423,3 +422,5 @@ progress {
     }
 }
 /* style */
+@media screen and (min-width: 800px) {
+}
