@@ -5,6 +5,7 @@
  */
 
 //import {$sel} from "";
+"use strict";
 import togglePower from "./ui.js";
 
 const toggleSelTerminal = function () {
@@ -21,6 +22,7 @@ function toggleTerminal() {
     document.getElementById('terminal-sel').innerHTML = document.getElementById('terminal-sel').value;
     document.querySelector("#terminal h2 data")[0].value = document.getElementById('terminal-sel').value;
     document.querySelector("#terminal h2 data")[0].innerHTML = document.getElementById('terminal-sel').innerHTML;
+
 }
 function RegisterHandlers() {
     document.getElementById("#selterm").onchange(evt) => {

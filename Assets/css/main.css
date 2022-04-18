@@ -144,7 +144,7 @@ main {
     background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
 }
 
-section {
+.term-main section {
     float: left;
     width: 50%;
     padding: .25%;
@@ -157,7 +157,12 @@ section {
     min-width: 45vh;
     max-width: 60vh;
     text-wrap: normal;
+    padding: 5px;
 }
+
+    #terminal h2 {
+        text-align: left;
+    }
 
 /* nav style */
 
